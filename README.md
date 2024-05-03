@@ -22,6 +22,36 @@ Size and instances: Train CSV with 200 examples, Test CSV with 50 examples. Trai
 Data is availible for download in the repository, as well as through the link at the top of the README file.
 
 
+The kaggle site does not tell me what the acronyms stand for. From a brief search, Fire Weather Indices (FWI) seem to be uniform among cities, states, and countries. This was the first guide to the acronym meanings I found:
+https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi
+
+**Fine Fuel Moisture Code (FFMC)**
+-a numeric rating of the moisture content of litter and other cured fine fuels. This code is an indicator of the relative ease of ignition and the flammability of fine fuel.
+
+**Duff Moisture Code(DMC)**
+-a numeric rating of the average moisture content of loosely compacted organic layers of moderate depth. This code gives an indication of fuel consumption in moderate duff layers and medium-size woody material.
+
+
+**Drought Code(DC)**
+-a numeric rating of the average moisture content of deep, compact organic layers. This code is a useful indicator of seasonal drought effects on forest fuels and the amount of smoldering in deep duff layers and large logs.
+
+
+**Initial Spread Index(ISI)**
+-a numeric rating of the expected rate of fire spread. It is based on wind speed and FFMC. Like the rest of the FWI system components, ISI does not take fuel type into account. Actual spread rates vary between fuel types at the same ISI.
+
+
+**Buildup Index(BUI)**
+-a numeric rating of the total amount of fuel available for combustion. It is based on the DMC and the DC. The BUI is generally less than twice the DMC value, and moisture in the DMC layer is expected to help prevent burning in material deeper down in the available fuel.
+
+
+**Fire Weather Index(FWI)**
+-a numeric rating of fire intensity. It is based on the ISI and the BUI, and is used as a general index of fire danger throughout the forested areas of Canada.
+
+
+
+*I can also only assume that for the Classes, 1.0 means there was a fire and 0.0 means there wasn't*
+
+
 **Data Visualization**
 ![prelim](https://github.com/tielyrr/3402_Kaggle/assets/143365566/633a534c-c4a6-4670-85d7-d31f299a3ee3)
 The data is very skewed.
