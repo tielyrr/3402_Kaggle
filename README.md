@@ -55,6 +55,7 @@ I can also only assume that for the Classes, 1.0 means there was a fire and 0.0 
 **Data Visualization**
 ![prelim](https://github.com/tielyrr/3402_Kaggle/assets/143365566/5e2d11be-40a1-4775-afa6-40aee6ede5b9)
 Quite a bit of the data is skewed, robust scaling would be best.
+![cat](https://github.com/tielyrr/3402_Kaggle/assets/143365566/83ab2dd1-49d7-496d-a282-f2cc69b4c5e1)
 
 
 **Preprocessing / Clean up**
