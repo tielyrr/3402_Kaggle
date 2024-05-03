@@ -51,7 +51,7 @@ https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi
 
 I can also only assume that for the Classes, 1.0 means there was a fire and 0.0 means there wasn't
 
-
+***********************************************************************
 **Data Visualization**
 Quite a bit of the data is skewed, robust scaling would be best, if any.
 ![prelim](https://github.com/tielyrr/3402_Kaggle/assets/143365566/5e2d11be-40a1-4775-afa6-40aee6ede5b9)
