@@ -80,6 +80,7 @@ I ran into some problems with reproduciblity, and had to adjust to new parameter
 
 
 ![Screenshot 2024-05-02 230833](https://github.com/tielyrr/3402_Kaggle/assets/143365566/83a46f47-2369-4575-9aec-1ff106489cd5)
+![roc](https://github.com/tielyrr/3402_Kaggle/assets/143365566/3d7958a5-73b4-432b-9c94-db4ecb03c53a)
 
 ![Screenshot 2024-05-03 103648](https://github.com/tielyrr/3402_Kaggle/assets/143365566/ba07d361-4bf0-4215-9566-26f0f85d0525)
 
