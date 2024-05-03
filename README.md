@@ -80,7 +80,8 @@ I ran into some problems with reproduciblity, and had to adjust to new parameter
 
 ![Screenshot 2024-05-02 230833](https://github.com/tielyrr/3402_Kaggle/assets/143365566/83a46f47-2369-4575-9aec-1ff106489cd5)
 
-I made a confusion matrix heatmap, but as I reran everything to try and save it, my results changed again...
+![Screenshot 2024-05-03 103648](https://github.com/tielyrr/3402_Kaggle/assets/143365566/ba07d361-4bf0-4215-9566-26f0f85d0525)
+
 
 **Conclusions**
 SVM is a viable option for forest fire prediction, but more work needs to be done in order to improve accuracy without overfitting. 
