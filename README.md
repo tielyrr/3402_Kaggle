@@ -76,8 +76,11 @@ I ran into some problems with reproduciblity, and had to adjust to new parameter
 
 
 **Performance**
+
+
 ![Screenshot 2024-05-02 230833](https://github.com/tielyrr/3402_Kaggle/assets/143365566/83a46f47-2369-4575-9aec-1ff106489cd5)
 Show one (or few) visualization(s) of results, for example ROC curves.
+
 
 **Conclusions**
 SVM is a viable option for forest fire prediction, but more work needs to be done in order to improve it without overfitting. 
