@@ -1,4 +1,4 @@
-The final project for my DATA3402 class; an application of all required skills. Aims to sufficiently complete the closed Kaggle Challenge "Forest Fire Prediction."
+The final project for my DATA3402 class. Aims to sufficiently complete the closed Kaggle Challenge "Forest Fire Prediction."
 https://www.kaggle.com/competitions/forest-fire-prediction/overview
 # Forest Fire Prediction
 **Tasks**
@@ -21,7 +21,7 @@ Size and instances: Train CSV with 200 examples, Test CSV with 50 examples. Trai
 
 Data is availible for download in the repository, as well as through the link at the top of the README file.
 
-
+*******************************************************************************************************
 The kaggle site does not tell me what the acronyms stand for. From a brief search, Fire Weather Indices (FWI) seem to be uniform among cities, states, and countries. This was the first guide to the acronym meanings I found:
 https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi
 
@@ -58,7 +58,7 @@ Quite a bit of the data is skewed, robust scaling would be best.
 
 
 **Preprocessing / Clean up**
-Dataset was very clean; just needed to do some data conversions, encoding of categorical variables, and feature selection/reduction.
+Dataset was very clean; just needed to do some data conversions, encoding of categorical variables, and feature selection/reduction. I had initially kept all features besides the day and year, but that later led to overfit so I reduced it drastically, undoing quite a bit of my original work.
 
 
 **Models**
@@ -82,7 +82,9 @@ I ran into some problems with reproduciblity, and had to adjust to new parameter
 
 ![roc](https://github.com/tielyrr/3402_Kaggle/assets/143365566/2f401eec-4676-4d14-98e1-10be61ddca10)
 
+![htmp](https://github.com/tielyrr/3402_Kaggle/assets/143365566/6fac52ed-b661-4b62-9856-e57f73cbcd51)
 
+![htmp](https://github.com/tielyrr/3402_Kaggle/assets/143365566/829dff96-a646-4b67-ab49-b28e254557d1)
 
 **Conclusions**
 SVM is a viable option for forest fire prediction, but more work needs to be done in order to improve accuracy without overfitting. 
