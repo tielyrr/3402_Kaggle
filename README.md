@@ -23,7 +23,8 @@ Data is availible for download in the repository, as well as through the link at
 
 
 **Data Visualization**
-Show a few visualization of the data and say a few words about what you see.
+![prelim](https://github.com/tielyrr/3402_Kaggle/assets/143365566/633a534c-c4a6-4670-85d7-d31f299a3ee3)
+The data is very skewed.
 
 
 **Preprocessing / Clean up**
