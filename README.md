@@ -91,11 +91,11 @@ Trying a simple deep learning model may do the trick.
 
 **How to reproduce results**
 Remove all categorical and calculated features, scale the data, then do a GridSearchCV with an SVM.
-This dataset is very lightweight, you sshouldn't need any special hardware. 
+This dataset is very lightweight, you shouldn't need any special hardware. 
 
 
 
-
+******************************************************************************************
 **Overview of files in repository**
 train.csv: the training data
 
