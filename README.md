@@ -83,7 +83,8 @@ Show one (or few) visualization(s) of results, for example ROC curves.
 
 
 **Conclusions**
-SVM is a viable option for forest fire prediction, but more work needs to be done in order to improve it without overfitting. 
+SVM is a viable option for forest fire prediction, but more work needs to be done in order to improve accuracy without overfitting. 
+
 Future Work:
 
 Trying a simple deep learning model may do the trick.
