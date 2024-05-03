@@ -99,8 +99,14 @@ When I ran it the last time with minimal features, there was no overfitting and 
 ![roc2](https://github.com/tielyrr/3402_Kaggle/assets/143365566/d352ed3d-05a4-4c5d-b9b5-4f80860aeb58)
 
 
+********************************************
+**Kaggle Challenge Results**
+![Screenshot 2024-05-03 175445](https://github.com/tielyrr/3402_Kaggle/assets/143365566/32f5f1b6-d8fa-49b6-9e55-098ece094f8d)
 
+
+***********************************************
 **Conclusions**
+
 SVM is a viable option for forest fire prediction. 
 
 In the future, trying a simple deep learning model may work with a larger and more variable dataset.
