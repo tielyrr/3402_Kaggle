@@ -3,87 +3,62 @@ https://www.kaggle.com/competitions/forest-fire-prediction/overview
 ## Forest Fire Prediction
 **Tasks**
 Use the various parameters such as relative humidity, temperature, wind speed, etc. to develop a program to predict whether or not there will be a forest fire.
-**Approach**
 
 **Summary**
 ***************************************************
 # Data
-Type: For example
-Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-Input: CSV file of features, output: signal/background flag in 1st column.
-Size: How much data?
-Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
+Type: CSV
+Size and instances: Train CSV with 200 examples, Test CSV with 50 examples. Train was split 80/20 for validation.
+Data is availible for download in the repository, as well as through the link at the top of the README file.
 
-**Preprocessing / Clean up**
-Describe any manipulations you performed to the data.
+# Preprocessing / Clean up**
+Dataset was very clean; just needed to do some data conversions, encoding of categorical variables, and feature selection/reduction.
 
-**Data Visualization**
+# Data Visualization
 Show a few visualization of the data and say a few words about what you see.
 
 # Problem Formulation
-Define:
-Input / Output
+Define: Correctly perform binary classificaton
+Input: CSV file of features, output: class in last column
 
 # Models
-Describe the different models you tried and why.
-Loss, Optimizer, other Hyperparameters.
+I tried Random Forest and Support Vector Machine. Through trials, the SVM seemed less prone to overfit and favorable towards the scaled data, so I stuck with that one.
+SVC(C=1.7, gamma='auto')
 
 # Training
-Describe the training:
-How you trained: software and hardware.
-How did training take.
-Training curves (loss vs epoch for test/train).
-How did you decide to stop training.
-Any difficulties? How did you resolve them?
+GridSearchCV
+Software/Hardware: scikit-learn on WSL through Ubuntu and Jupyter Notebook.
+I ran into overfitting problems and spent a while adjusting the data as well as the hyperparameters. I stopped once I found a good balance of f1, accuracy, and no overfitting.
+I ran into some problems with reproduciblity, and had to adjust to new parameters.
 
-# Performance Comparison
+# Performance
 Clearly define the key performance metric(s).
 Show/compare results in one table.
 Show one (or few) visualization(s) of results, for example ROC curves.
 
 # Conclusions
-State any conclusions you can infer from your work. Example: LSTM work better than GRU.
-Future Work
-What would be the next thing that you would try.
-What are some other studies that can be done starting from here.
+SVM is a viable option for forest fire prediction, but more work needs to be done in order to improve it without overfitting. 
+Future Work:
+Trying a simple deep learning model may do the trick.
 
 # How to reproduce results
-In this section, provide instructions at least one of the following:
-Reproduce your results fully, including training.
-Apply this package to other data. For example, how to use the model you trained.
-Use this package to perform their own study.
-Also describe what resources to use for this package, if appropirate. For example, point them to Collab and TPUs.
+Remove all categorical and calculated features, scale the data, then do a GridSearchCV with an SVM.
+This dataset is very lightweight, you sshouldn't need any special hardware. 
 
 # Overview of files in repository
-Describe the directory structure, if any.
-
-List all relavent files and describe their role in the package.
-
-An example:
-
-utils.py: various functions that are used in cleaning and visualizing data.
-preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
-visualization.ipynb: Creates various visualizations of the data.
-models.py: Contains functions that build the various models.
-training-model-1.ipynb: Trains the first model and saves model during training.
-training-model-2.ipynb: Trains the second model and saves model during training.
-training-model-3.ipynb: Trains the third model and saves model during training.
-performance.ipynb: loads multiple trained models and compares results.
-inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
-Note that all of these notebooks should contain enough text for someone to understand what is happening.
+train.csv: the training data.
+test.csv: the testing data.
+fire_test_preds.csv: the predictions for the test data in the proper submission form.
+FireKaggle.ipynb: my comprehensive code for the project.
 
 # Software Setup
-List all of the required packages.
-If not standard, provide or point to instruction for installing the packages.
-Describe how to install your package.
-# Data
-Point to where they can download the data.
-Lead them through preprocessing steps, if necessary.
-# Training
-Describe how to train the model
-# Performance Evaluation
-Describe how to run the performance evaluation.
-# Citations
-Provide any references.
-
-
+import pandas as pd
+from zipfile import ZipFile
+import os
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.preprocessing import RobustScaler
+from sklearn.model_selection import GridSearchCV, train_test_split
+from sklearn.metrics import confusion_matrix,  accuracy_score
+from sklearn.ensemble import RandomForestClassifier
