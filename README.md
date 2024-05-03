@@ -87,7 +87,7 @@ When I ran it the last time with minimal features, there was no overfitting and 
 
 ## Performances
 
-**First frun after feature reducing and tuning:**
+**First run after feature reducing and tuning:**
 
 ![Screenshot 2024-05-02 230833](https://github.com/tielyrr/3402_Kaggle/assets/143365566/83a46f47-2369-4575-9aec-1ff106489cd5)
 ![roc](https://github.com/tielyrr/3402_Kaggle/assets/143365566/3d7958a5-73b4-432b-9c94-db4ecb03c53a)
