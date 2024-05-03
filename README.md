@@ -79,7 +79,9 @@ I ran into some problems with reproduciblity, and had to adjust to new parameter
 
 
 ![Screenshot 2024-05-02 230833](https://github.com/tielyrr/3402_Kaggle/assets/143365566/83a46f47-2369-4575-9aec-1ff106489cd5)
-Show one (or few) visualization(s) of results, for example ROC curves.
+
+
+![roc](https://github.com/tielyrr/3402_Kaggle/assets/143365566/76951e46-3c22-4388-9ee8-94d0e981853a)
 
 
 **Conclusions**
