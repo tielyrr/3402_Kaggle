@@ -97,19 +97,33 @@ This dataset is very lightweight, you sshouldn't need any special hardware.
 
 
 **Overview of files in repository**
-train.csv: the training data.
+train.csv: the training data
+.
 test.csv: the testing data.
+
 fire_test_preds.csv: the predictions for the test data in the proper submission form.
+
 FireKaggle.ipynb: my comprehensive code for the project.
+
 
 **Software Setup**
 import pandas as pd
+
 from zipfile import ZipFile
+
 import os
+
 import numpy as np
+
 import matplotlib.pyplot as plt
+
 import seaborn as sns
+
 from sklearn.preprocessing import RobustScaler
+
 from sklearn.model_selection import GridSearchCV, train_test_split
+
 from sklearn.metrics import confusion_matrix,  accuracy_score
+
 from sklearn.ensemble import RandomForestClassifier
+
