@@ -103,7 +103,7 @@ When I ran it the last time with minimal features, there was no overfitting and 
 **Conclusions**
 SVM is a viable option for forest fire prediction. 
 
-In the future, trying a simple deep learning model may do the trick.
+In the future, trying a simple deep learning model may work with a larger and more variable dataset.
 
 
 **How to reproduce results**
@@ -112,7 +112,6 @@ To reproduce the final model's results;
 - Remove all categorical variables, keep the DC, FFMC, and ISI and Classes. 
 - Do not scale the data
 - GridSearchCV with an SVM.
-- 
 This dataset is very lightweight, you shouldn't need any special hardware. 
 
 
