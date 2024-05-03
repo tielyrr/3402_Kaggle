@@ -49,12 +49,12 @@ https://cwfis.cfs.nrcan.gc.ca/background/summary/fwi
 
 
 
-*I can also only assume that for the Classes, 1.0 means there was a fire and 0.0 means there wasn't*
+I can also only assume that for the Classes, 1.0 means there was a fire and 0.0 means there wasn't
 
 
 **Data Visualization**
-![prelim](https://github.com/tielyrr/3402_Kaggle/assets/143365566/633a534c-c4a6-4670-85d7-d31f299a3ee3)
-The data is very skewed.
+![prelim](https://github.com/tielyrr/3402_Kaggle/assets/143365566/5e2d11be-40a1-4775-afa6-40aee6ede5b9)
+Quite a bit of the data is skewed, robust scaling would be best.
 
 
 **Preprocessing / Clean up**
@@ -76,10 +76,8 @@ I ran into some problems with reproduciblity, and had to adjust to new parameter
 
 
 **Performance**
-Clearly define the key performance metric(s).
-Show/compare results in one table.
+![Screenshot 2024-05-02 230833](https://github.com/tielyrr/3402_Kaggle/assets/143365566/83a46f47-2369-4575-9aec-1ff106489cd5)
 Show one (or few) visualization(s) of results, for example ROC curves.
-
 
 **Conclusions**
 SVM is a viable option for forest fire prediction, but more work needs to be done in order to improve it without overfitting. 
