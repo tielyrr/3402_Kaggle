@@ -7,8 +7,10 @@ Use the various parameters such as relative humidity, temperature, wind speed, e
 ## Summary
 ***************************************************
 **Problem Formulation**
-Define: Correctly perform binary classificaton
-Input: CSV file of features, output: class in last column
+Define: 
+Correctly perform binary classificaton
+Input: 
+CSV file of features, output: class in last column
 
 **Data**
 Type: CSV
