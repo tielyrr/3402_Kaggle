@@ -98,7 +98,7 @@ This dataset is very lightweight, you sshouldn't need any special hardware.
 
 **Overview of files in repository**
 train.csv: the training data
-.
+
 test.csv: the testing data.
 
 fire_test_preds.csv: the predictions for the test data in the proper submission form.
