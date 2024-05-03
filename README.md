@@ -53,10 +53,11 @@ I can also only assume that for the Classes, 1.0 means there was a fire and 0.0 
 
 
 **Data Visualization**
+Quite a bit of the data is skewed, robust scaling would be best, if any.
 ![prelim](https://github.com/tielyrr/3402_Kaggle/assets/143365566/5e2d11be-40a1-4775-afa6-40aee6ede5b9)
-Quite a bit of the data is skewed, robust scaling would be best.
-![comps](https://github.com/tielyrr/3402_Kaggle/assets/143365566/8eb92471-685c-4fb6-96c6-ae8247cdc77e)
 Many of the features are quite distinct.
+![comps](https://github.com/tielyrr/3402_Kaggle/assets/143365566/8eb92471-685c-4fb6-96c6-ae8247cdc77e)
+
 
 
 **Preprocessing / Clean up**
@@ -84,15 +85,15 @@ I ran into some problems with reproduciblity, and had to adjust to new parameter
 When I ran it the last time with minimal features, there was no overfitting and perfect accuracy. 
 
 
-**Performances**
+## Performances
 
-First frun after feature reducing and tuning:
+**First frun after feature reducing and tuning:**
 
 ![Screenshot 2024-05-02 230833](https://github.com/tielyrr/3402_Kaggle/assets/143365566/83a46f47-2369-4575-9aec-1ff106489cd5)
 ![roc](https://github.com/tielyrr/3402_Kaggle/assets/143365566/3d7958a5-73b4-432b-9c94-db4ecb03c53a)
 ![Screenshot 2024-05-03 103648](https://github.com/tielyrr/3402_Kaggle/assets/143365566/ba07d361-4bf0-4215-9566-26f0f85d0525)
 
-Second run with only the DC, FFMC, and ISI features with tuning:
+**Second run with only the DC, FFMC, and ISI features with tuning:**
 
 ![Screenshot 2024-05-03 171836](https://github.com/tielyrr/3402_Kaggle/assets/143365566/f9a085df-fbce-4597-bdcb-2225321e20d2)
 ![roc2](https://github.com/tielyrr/3402_Kaggle/assets/143365566/d352ed3d-05a4-4c5d-b9b5-4f80860aeb58)
@@ -100,15 +101,18 @@ Second run with only the DC, FFMC, and ISI features with tuning:
 
 
 **Conclusions**
-SVM is a viable option for forest fire prediction, but more work needs to be done in order to improve accuracy without overfitting. 
+SVM is a viable option for forest fire prediction. 
 
-Future Work:
-
-Trying a simple deep learning model may do the trick.
+In the future, trying a simple deep learning model may do the trick.
 
 
 **How to reproduce results**
-Remove all categorical and calculated features, scale the data, then do a GridSearchCV with an SVM.
+To reproduce the final model's results;
+
+- Remove all categorical variables, keep the DC, FFMC, and ISI and Classes. 
+- Do not scale the data
+- GridSearchCV with an SVM.
+- 
 This dataset is very lightweight, you shouldn't need any special hardware. 
 
 
